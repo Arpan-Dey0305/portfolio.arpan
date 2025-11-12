@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact with Arpan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<link rel="icon" type="image/png" href="images/logo-white.png" />
+  <body>
+   <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form Container */
+form.contact-left {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Title */
+.contact-left-title h2 {
+  font-size: 28px;
+  color: #002b5c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-left-title hr {
+  border: 2px solid #002b5c;
+  width: 60px;
+  margin: 10px auto 20px auto;
+}
+
+/* Inputs & Textareas */
+.contact-inputs {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.contact-inputs:focus {
+  border-color: #002b5c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 43, 92, 0.2);
+}
+
+/* Button */
+button[type="submit"],
+#contact-home-btn {
+  background: linear-gradient(270deg, #09053f, #6eb0e6);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button[type="submit"]:hover,
+#contact-home-btn:hover {
+  background-color: #004080;
+}
+#arrow {
+  padding-top: 2px;
+}
+#contact-home-btn {
+  width: 150px;
+  font-size: 13px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/* ========================animation======================== */
+/* Initial hidden state for the form and inputs */
+.contact-left {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Inputs and button initial state */
+.contact-inputs,
+button {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes inputFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation when active */
+.animate-form {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animate-input {
+  animation: inputFadeIn 0.6s ease forwards;
+}
+
+.contact-inputs,
+button,
+#contact-home-btn {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.animate-input {
+  animation: inputFadeIn 0.6s ease forwards;
+}
+
+   </style>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+        autocomplete="off"
+      >
+        <div class="contact-left-title">
+          <h2>Get In Touch</h2>
+          <hr />
+        </div>
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="2a138ee4-8222-49e9-8bed-b12e8cd4493b"
+        />
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Write Your Name"
+          class="contact-inputs"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          autocomplete="off"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="tel"
+          name="mobile"
+          placeholder="Enter your mobile number"
+          autocomplete="off"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="subject"
+          placeholder="Write subject of your Message..."
+          autocomplete="off"
+          class="contact-inputs"
+          id="contact-inputs-subject"
+        ></textarea>
+        <textarea
+          name="message"
+          placeholder="Write Your Message..."
+          autocomplete="off"
+          class="contact-inputs"
+          id="contact-inputs-massage"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <span id = "arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+        <a href="index.html" id="contact-home-btn" class="contact-home-btn" onclick="window.close(); return false;">
+  <i class="fa-solid fa-house"></i> <span> Back To Home</span>
+</a>
+
+      </form>
+    </div>
+    <script>
+      function openPopup() {
+  document.getElementById("popup-overlay").style.display = "block";
+  document.getElementById("popup-box").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup-overlay").style.display = "none";
+  document.getElementById("popup-box").style.display = "none";
+}
+/* ==========animation======= */
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-left");
+  const inputs = document.querySelectorAll(
+    ".contact-inputs, button, #contact-home-btn"
+  );
+
+  // Animate the whole form
+  form.classList.add("animate-form");
+
+  // Animate inputs and buttons one by one
+  inputs.forEach((input, index) => {
+    setTimeout(
+      () => {
+        input.classList.add("animate-input");
+      },
+      (index + 1) * 200
+    ); // staggered effect
+  });
+});
+
+    </script>
+  </body>
+</html>
