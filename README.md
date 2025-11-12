@@ -80,7 +80,7 @@ Download CV directly from the Home/About section.
 🔗 Live Website Link:
 
 ```
-monumental-melba-466609.netlify.app
+https://portfolio-arpan-snowy.vercel.app/
 ```
 
 📧 Contact
