@@ -1378,14 +1378,14 @@ body.dark-mode #about-intro-role {
     max-width: 300px;
   }
   #pic1-about {
-    margin-left: 40px;
+    margin-left: 0;
   }
   #vertical-line {
     display: none;
   }
 
   #about-text {
-    width: 90%;
+    width: 95%;
     text-align: center;
   }
 
@@ -1399,6 +1399,7 @@ body.dark-mode #about-intro-role {
 
   #about-desc {
     font-size: 14px;
+    lline-height: 1.6;
     padding: 0 10px;
   }
 
@@ -1406,33 +1407,35 @@ body.dark-mode #about-intro-role {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
   }
 
-  #age-details,
-  #address-details,
-  #contact-details {
+    #details > div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    gap: 7px;
+    gap: 6px;
+    text-align: center;
   }
-  #age-details {
-    margin-bottom: 20px;
+
+  #details span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  #address-details {
-    margin-bottom: 20px;
-  }
-  #contact-details {
-    padding-top: 2px;
-    margin-bottom: 20px;
+
+  #details i {
+    font-size: 15px;
   }
 
   #about .download {
-    width: 80%;
-    max-width: 200px;
-    margin-top: 30px;
-    margin-left: 55px;
+    width: 200px;
+    text-align: center;
+    margin: 30px auto 0;
+    display: block;
   }
 }
 
@@ -4177,5 +4180,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </script>
   </body>
 </html>
+
 
 
