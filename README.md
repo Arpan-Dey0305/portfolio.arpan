@@ -31,7 +31,7 @@ Resume Download – PDF resume included (resume-Arpan Dey.pdf).
 │── index.html              # Main portfolio page
 │── contact.html            # Contact form page
 │── resume.pdf              # Resume (Downloadable)
-│── /images                 # Profile picture, logo, icons
+│__ /images                 # Profile picture, logo, icons
 ```
 🚀 How to Use
 Clone the repository:
