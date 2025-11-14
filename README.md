@@ -30,11 +30,7 @@ Resume Download – PDF resume included (resume-Arpan Dey.pdf).
 ```
 │── index.html              # Main portfolio page
 │── contact.html            # Contact form page
-│── style.css               # Main stylesheet
-│── contact-style.css       # Contact page stylesheet
-│── script.js               # Main JavaScript file
-│── contact-script.js       # Contact page JavaScript file
-│── resume-Arpan Dey.pdf    # Resume (Downloadable)
+│── resume.pdf              # Resume (Downloadable)
 │── /images                 # Profile picture, logo, icons
 ```
 🚀 How to Use
