@@ -3423,12 +3423,9 @@ footer {
           <div class="main-project-item">
             <span class="item-number">1.</span>
             <div class="project-details">
-              Smart Parking Management System
+              ParkSmart - Smart Parking Management System
               <div id="park-short-desc">
-                A Flask-based Parking Management System that logs vehicle
-                entries/exits, generates unique codes, and calculates time-based
-                charges. Includes in-memory storage with optional SQL schema for
-                future database integration.
+                A Flask-based Parking Management System that efficiently handles vehicle entry and exit logs, generates unique parking codes, and calculates time-based fees. Features include Razorpay payment integration, automated receipt generation, database integration, and email notifications sending parking details directly to users.
               </div>
               <div id="tech">
                 <i class="fa-solid fa-microchip"></i> Technologies Used: HTML,
@@ -3452,16 +3449,12 @@ footer {
           <div class="main-project-item">
             <span class="item-number">2.</span>
             <div class="project-details">
-              Banking Management System
+              MindMate - Healthcare Management System
               <div id="bank-short-desc">
-                Bank Management System — Console-Based Python Application with
-                MySQL Database, that allows users to create accounts, deposit,
-                withdraw, and check balances. Supports basic authentication and
-                data persistence via file handling.
+                MindMate is a healthcare web app built with Flask and SQLite, featuring ML-based disease detection, API integrations, secure database management, Razorpay payment system, and a responsive backend. It includes chatbot support, doctor appointments, and health tools for smart, accessible care.
               </div>
               <div id="tech">
-                <i class="fa-solid fa-microchip"></i> Technologies Used: Python,
-                SQL
+                <i class="fa-solid fa-microchip"></i> Technologies Used: Python, Flask, HTML, CSS, JavaScript, SQLite
               </div>
               <div id="proj-btn">
                 <button class="btn" id="openModalBtn2">
@@ -3485,72 +3478,60 @@ footer {
           <div class="modal-content">
             <span class="close" id="closeModalBtn"></span>
             <h2>
-              <i class="fa-solid fa-square-parking"></i> Smart Parking
-              Management System
+              <i class="fa-solid fa-square-parking"></i> ParkSmart
             </h2>
             <div id="pop-up-desc">
               <h3>
-                🚗 Smart Parking Management System — Flask-Based Web Application
+                Parksmart — Flask-Based Web Application
               </h3>
               <p id="proj-desc">
-                The Parking Management System is a dynamic web application built
-                with Flask (Python) that enables users to manage vehicle entries
-                and exits within a parking lot efficiently. It replicates a
-                real-world parking workflow through a minimalistic UI and
-                precise backend logic. Designed with both usability and
-                scalability in mind, this system offers essential functionality
-                such as tracking parking sessions, generating unique
-                identification codes, and computing time-based charges — all
-                from a simple web interface. This system is ideal for
-                small-scale parking lots, demo environments, or educational
-                purposes, and it serves as a foundation for integrating more
-                complex features like admin panels, QR code tracking, or
-                database persistence.
+                ParkSmart is a dynamic web application built using Flask (Python) that streamlines vehicle entry and exit operations within a parking facility. It simulates real-world parking workflows through an intuitive UI and efficient backend logic.
+
+Designed for usability and scalability, the system enables seamless tracking of parking sessions, generation of unique identification codes, automated billing, and secure payment handling. With integrated database support and email notifications, it enhances user experience while maintaining operational efficiency.
+
+This project is ideal for small-scale parking solutions, academic demonstrations, or as a foundation for advanced systems incorporating admin dashboards.
               </p>
-              <h3>✅ Core Features</h3>
+              <h3>Core Features</h3>
               <ul>
                 <li>
-                  🔐 Vehicle Session Tracking: Records vehicle number, type,
-                  unique session code, and entry time.
+                  Vehicle Session Tracking: Logs vehicle number, type, entry time, and unique session code.
                 </li>
                 <li>
-                  🧾 Unique Code Generation: Each vehicle is assigned an
-                  8-character unique code using Python’s uuid for session
-                  identification.
+                  Unique Code Generation: Generates secure 8-character codes using Python’s uuid for each parking session.
                 </li>
                 <li>
-                  🕒 Duration-Based Billing: Charges are calculated at a fixed
-                  per-minute rate using the difference between entry and exit
-                  timestamps.
+                  Time-Based Billing: Calculates parking charges dynamically based on entry and exit duration.
                 </li>
                 <li>
                   💬 Real-Time User Feedback: Clear success or error messages
                   displayed upon vehicle entry and exit attempts.
                 </li>
                 <li>
-                  💾 In-Memory Session Handling: Active parking sessions are
-                  stored in a Python list for simplicity and fast prototyping.
+                  Payment Integration: Integrated with Razorpay for seamless and secure online transactions.
                 </li>
                 <li>
-                  📊 MySQL-Compatible Schema: Includes a ready-made SQL table
-                  design (ParkingRecords) for future integration with relational
-                  databases.
+                  Receipt Generation: Automatically generates parking payment receipts for users.
                 </li>
                 <li>
-                  🧩 Modular Flask Codebase: Clean separation of routes, logic,
-                  and HTML templates, making it easy to upgrade or scale.
+                  Email Notifications: Sends parking details (vehicle info, code, date, and time) directly to the user’s email.
                 </li>
                 <li>
-                  🎨 Minimalist Frontend: Simple, responsive HTML pages rendered
-                  via Flask and Jinja2.
+                  Database Integration: Supports persistent storage using MySQL for scalable data management.
                 </li>
                 <li>
-                  ⚙️ Error Handling: Gracefully handles incorrect inputs,
-                  duplicate exits, or unmatched codes.
+                  Real-Time Feedback: Displays success/error messages for smooth user interaction.
                 </li>
                 <li>
-                  🚀 Lightweight & Deployable: Can run locally or on any basic
-                  cloud environment with minimal setup.
+                  Robust Error Handling: Handles invalid inputs, duplicate exits, and unmatched codes gracefully.
+                </li>
+                <li>
+                  Modular Code Structure: Clean Flask architecture with separation of routes, logic, and templates.
+                </li>
+                <li>
+                  Responsive UI: Minimalistic and user-friendly interface built with HTML and Jinja2.
+                </li>
+                <li>
+                  Lightweight Deployment: Easily deployable on local machines or cloud platforms.
                 </li>
               </ul>
             
@@ -3564,20 +3545,21 @@ footer {
                 <li>Frontend: HTML5, Jinja2 (templating)</li>
                 <li>Libraries/Utilities:
                   <ul>
-                    <li><i class="fa-solid fa-arrow-right"></i>  uuid (for session code generation)</li>
-                    <li><i class="fa-solid fa-arrow-right"></i>  datetime/timezone (for duration calculations)</li>
+                    <li> uuid (for session code generation)</li>
+                    <li> datetime/timezone (for duration calculations)</li>
                   </ul>
                 </li>
                 <li>Database: MySQL</li>
-                <li>Dev Environment: VS Code, PowerShell, Python 3.12</li>
+                <li>Payment Gateway: Razorpay</li>
+                <li>Development Environment: VS Code, PowerShell, Python 3.12</li>
               </ul>
             </p>
-            <h3>📌 Use Case Scenarios</h3>
+            <h3>Use Case Scenarios</h3>
             <ul>
-              <li>Local businesses needing basic parking management</li>
-              <li>Academic demonstration of Flask project structure</li>
-              <li>Freelance or internship projects showcasing backend capabilities</li>
-              <li>Prototype for larger parking automation systems</li>
+              <li>Parking management for small businesses or local facilities</li>
+              <li>Academic projects demonstrating Flask-based web development</li>
+              <li>Internship or freelance portfolio showcasing backend + payment integration</li>
+              <li>Prototype for advanced smart parking and automation systems</li>
             </ul>
             <div id = "project-github">
               <a
@@ -3595,59 +3577,77 @@ footer {
           <div class="modal-content">
             <span class="close" id="closeModalBtn2"></span>
             <h2>
-              <i class="fa-solid fa-building-columns"></i> Banking Management
-              System
+              <i class="fa-solid fa-building-columns"></i> MindMate - Healthcare Management System
             </h2>
             <div id="pop-up-desc">
-      <h3>🏦 Console-Based Python Banking System</h3>
+      <h3>MindMate — AI-Powered Health & Wellness Web Application</h3>
       <p id="proj-desc">
-        The Bank Management System is a Python-based CLI (Command Line Interface) application designed to simulate real-world banking operations through an interactive and secure terminal experience. Built using Python and MySQL, the system offers a solid foundation for managing basic banking functionalities such as opening accounts, deposits, withdrawals, balance inquiries, and updating personal details.
+        MindMate is an intelligent health and wellness web application built using Flask (Python) that combines AI-driven features with practical healthcare utilities. It is designed to assist users in managing their physical and mental well-being through smart tools like AI chatbot assistance, prescription processing, and personalized health guidance.
+
+With a focus on accessibility and innovation, MindMate integrates machine learning, APIs, database management, and payment systems to deliver a seamless user experience. The platform acts as a digital health companion, offering support ranging from basic medical insights to emotional well-being.
+
+This project is ideal for academic purposes, healthcare innovation prototypes, and as a foundation for building advanced AI-powered medical assistance platforms.
       </p>
 
-      <h3>✅ Core Features</h3>
+      <h3>Core Features</h3>
       <ul>
-        <li><h5>🔐 Account Management</h5>
-        <p>Securely creates and manages user accounts with unique account numbers, ensuring that each customer’s data remains distinct and easily retrievable.</p></li>
-        <li>💵 Deposit & Withdraw functionalities with basic validation</li>
-        <li><h5>Cash Withdrawal & Deposit</h5>
-        <p>Handles real-time balance updates by allowing users to deposit or withdraw money. Ensures integrity by checking for sufficient funds before processing a withdrawal.</p></li>
+        <li><h5>AI Health Chatbot:</h5>
+        <p>Provides intelligent responses for basic medical queries, medicine alternatives, and health-related suggestions.</p></li>
+        <li><h5>Medicine Information System:</h5>
+        <p>Fetches medicine details such as substitutes and MRP using API integration.</p></li>
 
-        <li><h5>📄 Account Statement</h5>
-        <p>Displays user account information such as account number, holder’s name, balance, and registered mobile number upon verification.</p></li>
+        <li><h5>Emotional Support Module:</h5>
+        <p>Offers basic mental health support through conversational AI.</p></li>
 
-        <li><h5>📲 Update Account Details</h5><p>Users can update their account holder’s name or registered mobile number through secure validation of existing credentials.</p></li>
+        <li><h5>Doctor Appointment Booking:</h5><p>Allows users to schedule appointments through an integrated system.</p></li>
 
-        <li><h5>🔄 Auto Account Number Generation</h5><p>The system automatically generates sequential account numbers based on the last existing entry in the database, removing the need for manual tracking.</p></li>
-        <li><h5>🔐 Data Validation & Error Handling</h5><p>Includes input validation for account details and handles exceptions like invalid account number, name mismatch, or insufficient funds.</p></li>
-        <li><h5>💾 Persistent Storage with MySQL</h5><p>All account records are stored in a MySQL database, ensuring data persistence, easy querying, and scalability for larger datasets.</p></li>
-        <li><h5>🧩 Extensible Python Codebase</h5><p>Cleanly structured code with logical separation of tasks, making it easy to extend the functionality or port to a GUI/web version in the future.</p></li>
-        <li><h5>🖥️ Console-Based UI</h5><p>Minimalistic, clear prompts and feedback messages create a user-friendly command-line experience, ideal for educational or backend prototyping use cases.
+        <li><h5>Payment Integration:</h5><p>Secure online payments powered by Razorpay.</p></li>
+        <li><h5>Database Integration:</h5><p>Stores user data, prescriptions, and interactions using SQLite.</p></li>
+        <li><h5>AI Medical Detection:</h5><p>Supports image-based disease detection (e.g., tumor detection module).</p></li>
+        <li><h5>Automated Processing:</h5><p>Handles uploads, PDF generation, and user interactions efficiently.</p></li>
+        <li><h5>Interactive UI:</h5><p>User-friendly interface with smooth navigation across multiple health modules.
 
 </p></li>
+        <li><h5>Modular Architecture:</h5><p>Clean separation of frontend, backend, and AI components for scalability.</p></li>
       </ul>
 
       <h3>
         <i class="fa-solid fa-microchip"></i> Technologies Used:
       </h3>
       <ul>
-        <li>Backend: Python</li>
-        <li>Database: MySQL 8+</li>
+        <li>Backend: Python, Flask</li>
+        <li>Frontend: HTML5, CSS3, JavaScript</li>
+        <li>Database: SQLite</li>
+        <li>APIs: Medicine data APIs (for drug info & pricing)</li>
+        <li>AI/ML Integration: Image processing & chatbot logic</li>
         <li>Libraries/Utilities:
-          <ul><li><i class="fa-solid fa-arrow-right"></i>  mysql.connector (for Python-MySQL communication)</li></ul>
-          <ul><li><i class="fa-solid fa-arrow-right"></i>  VS Code, Command Prompt, or PowerShell (for development and testing)</li></ul>
+          <ul><li>Flask – Web framework for routing and backend logic</li></ul>
+          <ul><li>TensorFlow / Keras – Loading and running ML models for medical image detection</li></ul>
+          <ul><li>NumPy – Numerical computations for image processing</li></ul>
+          <ul><li>Pillow (PIL) – Image handling and preprocessing</li></ul>
+          <ul><li>pytesseract – OCR for extracting text from prescriptions</li></ul>
+          <ul><li>Flask-Mail – Sending emails (notifications, reports, etc.)</li></ul>
+          <ul><li>MySQL Connector – Database connectivity and operations</li></ul>
+          <ul><li>Werkzeug – File handling and password security (hashing)</li></ul>
+          <ul><li>datetime – Time-based operations and scheduling</li></ul>
+          <ul><li>Razorpay – Payment gateway integration</li></ul>
+          <ul><li>python-dotenv – Environment variable management</li></ul>
+          <ul><li>Google Generative AI (genai) – AI chatbot and intelligent response generation</li></ul>
+          <ul><li>OS – File and directory management</li></ul>
         </li>
-        <li>Dev Environment: VS Code, Python 3.12</li>
+        <li>Development Environment: VS Code, Python 3.12</li>
       </ul>
 
-      <h3>📌 Use Case Scenarios</h3>
+      <h3> Use Case Scenarios</h3>
       <ul>
-        <li>Introductory Python projects</li>
-        <li>Academic assignments or demonstrations</li>
-        <li>Offline tools for basic banking simulations</li>
+        <li>AI-based health assistant for everyday users</li>
+        <li>Academic project showcasing full-stack + AI integration</li>
+        <li>Prototype for telemedicine and digital health platforms</li>
+        <li>Portfolio project demonstrating ML, API, and backend integration</li>
       </ul>
 
       <div id="project-github">
-        <a href="https://github.com/Arpan-Dey0305/Banking-Management-System" target="_blank">
+        <a href="https://github.com/Arpan-Dey0305/MindMate-Healthcare-Management-System" target="_blank">
           <i class="fa-brands fa-square-github"></i>
         </a>
       </div>
